@@ -28,7 +28,7 @@ print(complex_data, type(complex_data));
 
 check = True;
 
-print(check);
+print(check, type(check));
 
 name = "sAbrina CarpenTer";
 
