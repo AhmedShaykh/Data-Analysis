@@ -1,824 +1,824 @@
-# num = int(input("Enter Your Number: ")); # Exception Handling
+num = int(input("Enter Your Number: ")); # Exception Handling
 
-# try:
-#     print(10 / num);
+try:
+    print(10 / num);
 
-# except ZeroDivisionError:
-#     print("Zero Division Error!");
+except ZeroDivisionError:
+    print("Zero Division Error!");
 
-# print("Congratulations Your Division Is Successfully Run");
+print("Congratulations Your Division Is Successfully Run");
 
-# num = input("Enter Your Number: ");
+num = input("Enter Your Number: ");
 
-# try:
-#     num = int(num);
-#     print(10 / num);
+try:
+    num = int(num);
+    print(10 / num);
 
-# except Exception as error:
-#     print(f"Sorry There Is An Error as {error}");
+except Exception as error:
+    print(f"Sorry There Is An Error as {error}");
 
-# else:
-#     print("Good There Is No Exception");
+else:
+    print("Good There Is No Exception");
 
-# print("Congratulations Your Division Is Successfully Run");
+print("Congratulations Your Division Is Successfully Run");
 
-# num = input("Enter Your Number: ");
+num = input("Enter Your Number: ");
 
-# try:
-#     num = int(num);
-#     print(10 / num);
+try:
+    num = int(num);
+    print(10 / num);
 
-# except Exception as error:
-#     pass;
+except Exception as error:
+    pass;
 
-# else:
-#     print("Good There Is No Exception");
+else:
+    print("Good There Is No Exception");
 
-# print("Congratulations Your Division Is Successfully Run");
+print("Congratulations Your Division Is Successfully Run");
 
-# num = input("Enter Your Number: ");
+num = input("Enter Your Number: ");
 
-# try:
-#     num = int(num);
-#     print(10 / num);
+try:
+    num = int(num);
+    print(10 / num);
 
-# except Exception as error:
-#     print(f"Sorry There Is An Error as {error}");
+except Exception as error:
+    print(f"Sorry There Is An Error as {error}");
 
-# else:
-#     print("Good There Is No Exception");
+else:
+    print("Good There Is No Exception");
 
-# finally:
-#     print("I Will Run No Matter What");
+finally:
+    print("I Will Run No Matter What");
 
-# print("Congratulations Your Division Is Successfully Run");
+print("Congratulations Your Division Is Successfully Run");
 
-# age = int(input("Enter Your Number: "));
+age = int(input("Enter Your Number: "));
 
-# try:
+try:
 
-#     if age < 18:
-#         raise ValueError("Sorry Your Not Eligible"); # Raise Throw Exception Error
+    if age < 18:
+        raise ValueError("Sorry Your Not Eligible"); # Raise Throw Exception Error
 
-#     else:
-#         print("Welcome To The Club");
+    else:
+        print("Welcome To The Club");
 
-# except Exception as err:
-#     print(f"An Error Occured As {err}");
+except Exception as err:
+    print(f"An Error Occured As {err}");
 
-# print("The Party Will Start Soon");
+print("The Party Will Start Soon");
 
-# data = open("./main.py");  # File Handling
+data = open("./main.py");  # File Handling
 
-# print(data);
+print(data);
 
-# print(type(data));
+print(type(data));
 
-# print(dir(data));
+print(dir(data));
 
-# print([i for i in dir(data) if "__" not in i]);
+print([i for i in dir(data) if "__" not in i]);
 
-# print([i for i in dir(data) if not i.startswith("_")]);
+print([i for i in dir(data) if not i.startswith("_")]);
 
-# data = open("./main.py"); # Connectivity With File
+data = open("./main.py"); # Connectivity With File
 
-# print(data.read());
+print(data.read());
 
-# data.close(); # Close Connectivity
+data.close(); # Close Connectivity
 
-# with open("./app.txt") as file: # The With Method Automatically Close Your File After Done
+with open("./app.txt") as file: # The With Method Automatically Close Your File After Done
 
-#     print(type(file));
+    print(type(file));
 
-#     print(file.read());
+    print(file.read());
 
-# print("Free Palestine");
+print("Free Palestine");
 
-# with open("./app2.txt") as file:
+with open("./app2.txt") as file:
 
-#     print(file.readline()); # Read Only One Line At A Time
+    print(file.readline()); # Read Only One Line At A Time
 
-#     print(file.readline());
+    print(file.readline());
 
-# with open("./app2.txt") as file:
+with open("./app2.txt") as file:
 
-#     print(file.readline(), end="");
+    print(file.readline(), end="");
 
-#     print(file.readline(), end="");
+    print(file.readline(), end="");
 
-# with open("./app2.txt") as file:
+with open("./app2.txt") as file:
 
-#     print(file.readlines());
+    print(file.readlines());
 
-# with open("./app2.txt", "r") as file: # By Default Is R (Read)
+with open("./app2.txt", "r") as file: # By Default Is R (Read)
 
-#     print(file.readlines()[1:3]);
+    print(file.readlines()[1:3]);
 
-# with open("./app3.txt", "w") as file: # W Is Create New File & If File Exist Remove Old Content Add New
+with open("./app3.txt", "w") as file: # W Is Create New File & If File Exist Remove Old Content Add New
 
-#     file.write("Imran Khan");
+    file.write("Imran Khan");
 
-# with open("./app3.txt") as file:
+with open("./app3.txt") as file:
 
-#     print(file.read());
+    print(file.read());
 
-# with open("./app3.txt", "r+") as file: # Read & Write Both In File
+with open("./app3.txt", "r+") as file: # Read & Write Both In File
 
-#     print(file.read());
+    print(file.read());
 
-#     file.write(" Release Imran Khan"); # After Run Write Method Cursor Go In Last
+    file.write(" Release Imran Khan"); # After Run Write Method Cursor Go In Last
 
-#     print("After:", file.read()); # Then It Show Blank
+    print("After:", file.read()); # Then It Show Blank
 
-# with open("./app3.txt", "r+") as file:
+with open("./app3.txt", "r+") as file:
 
-#     print(file.read());
+    print(file.read());
 
-#     file.write(" Release Imran Khan");
+    file.write(" Release Imran Khan");
 
-#     file.seek(0); # Select Particular Value In Cursor
+    file.seek(0); # Select Particular Value In Cursor
 
-#     print("After:",file.read());
+    print("After:",file.read());
 
-# with open("./app4.txt", "w") as file:
+with open("./app4.txt", "w") as file:
 
-#     file.write("Free ");
+    file.write("Free ");
 
-# with open("./app4.txt", "a") as file: # If File Not Exist It Will Create New File & If Exist Add Content In Last Of File Not Remove Like W
+with open("./app4.txt", "a") as file: # If File Not Exist It Will Create New File & If Exist Add Content In Last Of File Not Remove Like W
 
-#     file.write("Palestine");
+    file.write("Palestine");
 
-# with open("./app5.txt", "x") as file: # If File Not Exist Then It Will Create New File
+with open("./app5.txt", "x") as file: # If File Not Exist Then It Will Create New File
 
-#     file.write("My Name Is AHM X"); # If File Exist Then Will Thorw Error
+    file.write("My Name Is AHM X"); # If File Exist Then Will Thorw Error
 
-# class Factory: # OOP (Object Oriented Programming)
+class Factory: # OOP (Object Oriented Programming)
 
-#     name = "Ahmed"; # Attribute
+    name = "Ahmed"; # Attribute
 
-#     def hello(self): # Method
-#         print("Hello I'm Learning OOP In Python");
+    def hello(self): # Method
+        print("Hello I'm Learning OOP In Python");
 
-# obj = Factory();
+obj = Factory();
 
-# print(obj.name);
+print(obj.name);
 
-# obj.hello();
+obj.hello();
 
-# class Factory:
+class Factory:
 
-#     def __init__(self, material, zips, pockets): # Constructor (__Init__)
-#         self.material = material;
-#         self.zips = zips;
-#         self.pockets = pockets;
+    def __init__(self, material, zips, pockets): # Constructor (__Init__)
+        self.material = material;
+        self.zips = zips;
+        self.pockets = pockets;
     
-#     def show(self): # Self Method Like (This Method In JS) But It Must Write In Class Method (Function) 
-#         print(f"Your Brand Material Is {self.material}, Zips: {self.pockets}, Pockets: {self.zips} ");
+    def show(self): # Self Method Like (This Method In JS) But It Must Write In Class Method (Function) 
+        print(f"Your Brand Material Is {self.material}, Zips: {self.pockets}, Pockets: {self.zips} ");
 
-# Nike = Factory("Leather", 3, 2); # Nike Is Now Instance Of Factory (Object)
+Nike = Factory("Leather", 3, 2); # Nike Is Now Instance Of Factory (Object)
 
-# Nike.show();
+Nike.show();
 
-# Addidas = Factory("Cotton", 1, 4);
+Addidas = Factory("Cotton", 1, 4);
 
-# Addidas.show();
+Addidas.show();
 
-# print(Addidas.material);
+print(Addidas.material);
 
-# class Animal:
+class Animal:
 
-#     name = "Lion"; # Class Attribute & Also Static Variable
+    name = "Lion"; # Class Attribute & Also Static Variable
     
-#     def __init__(self, name):
-#         self.name = name; # Instance Attribute
+    def __init__(self, name):
+        self.name = name; # Instance Attribute
 
-# print(Animal.name); # It Default
+print(Animal.name); # It Default
 
-# pet = Animal("Horse");
+pet = Animal("Horse");
 
-# print(pet.name);
+print(pet.name);
 
-# class Animal:
+class Animal:
 
-#     name = "Lion";
+    name = "Lion";
     
-#     def __init__(self, name=None):
-#         if name is None:
-#             self.name = Animal.name; # Use Class Default Attribute
-#         else:
-#             self.name = name; # Use Provided Attribute
+    def __init__(self, name=None):
+        if name is None:
+            self.name = Animal.name; # Use Class Default Attribute
+        else:
+            self.name = name; # Use Provided Attribute
 
-#     def favorite(self): # Instance Method
-#         print(f"My Favorite Animal Is: {self.name}");
+    def favorite(self): # Instance Method
+        print(f"My Favorite Animal Is: {self.name}");
 
-# print(Animal.name);
+print(Animal.name);
 
-# animal1 = Animal();
+animal1 = Animal();
 
-# animal1.favorite();
+animal1.favorite();
 
-# animal2 = Animal("Horse");
+animal2 = Animal("Horse");
 
-# animal2.favorite();
+animal2.favorite();
 
-# class Animal:
+class Animal:
 
-#     name = "Lion";
+    name = "Lion";
     
-#     def __init__(self, name):
-#             self.name = name;
+    def __init__(self, name):
+            self.name = name;
 
-#     def favorite(self):
-#         print(f"My Favorite Animal Is: {self.name}");
+    def favorite(self):
+        print(f"My Favorite Animal Is: {self.name}");
 
-#     @classmethod
-#     def pet(cls): # Class Method
-#         print(f"My Favorite Pet Is: {cls.name}"); # Target Class Attribute
+    @classmethod
+    def pet(cls): # Class Method
+        print(f"My Favorite Pet Is: {cls.name}"); # Target Class Attribute
 
-#     @staticmethod
-#     def static(): # Its Not Target (Object, Attribute & Method)
-#         print("Hi Everyone"); # Its Simple Static Fucntion
+    @staticmethod
+    def static(): # Its Not Target (Object, Attribute & Method)
+        print("Hi Everyone"); # Its Simple Static Fucntion
 
-# pet = Animal("Horse");
+pet = Animal("Horse");
 
-# pet.favorite();
+pet.favorite();
 
-# pet.pet();
+pet.pet();
 
-# pet.static();
+pet.static();
 
-# pet2 = Animal("Cat");
+pet2 = Animal("Cat");
 
-# pet2.favorite();
+pet2.favorite();
 
-# pet2.pet();
+pet2.pet();
 
-# class Teacher:
+class Teacher:
 
-#     def __init__(self, teacherId, teacherName):
+    def __init__(self, teacherId, teacherName):
 
-#         self.name = teacherName;
+        self.name = teacherName;
 
-#         self.teacherId = teacherId;
+        self.teacherId = teacherId;
 
-#         self.organizationName = "Panaversity";
+        self.organizationName = "Panaversity";
 
-#     def teaching(self, subject ):
-#         print(f"{self.name} Is Teaching {subject}...!");
+    def teaching(self, subject ):
+        print(f"{self.name} Is Teaching {subject}...!");
 
-# obj1 : Teacher = Teacher(1, "Andrew NG");
+obj1 : Teacher = Teacher(1, "Andrew NG");
 
-# obj2 : Teacher = Teacher(2, "Elon Musk");
+obj2 : Teacher = Teacher(2, "Elon Musk");
 
-# print(f"Name: {obj1.name}, ID: {obj1.teacherId} & Organiztion: {obj1.organizationName} \n");
+print(f"Name: {obj1.name}, ID: {obj1.teacherId} & Organiztion: {obj1.organizationName} \n");
 
-# print(f"Name: {obj2.name}, ID: {obj2.teacherId} & Organiztion: {obj2.organizationName}");
+print(f"Name: {obj2.name}, ID: {obj2.teacherId} & Organiztion: {obj2.organizationName}");
 
-# obj1.teaching("Agentic AI");
+obj1.teaching("Agentic AI");
 
-# obj2.teaching("Generative AI");
+obj2.teaching("Generative AI");
 
-# print(dir(obj1));
+print(dir(obj1));
 
-# class Teacher:
+class Teacher:
 
-#     counter = 0;
+    counter = 0;
 
-#     classTiming = "10PM In USA Time";
+    classTiming = "10PM In USA Time";
 
-#     def __init__(this, teacherName):
+    def __init__(this, teacherName):
 
-#         this.name = teacherName;
+        this.name = teacherName;
 
-#         this.organizationName = "Panaversity";
+        this.organizationName = "Panaversity";
 
-#         Teacher.counter += 1;
+        Teacher.counter += 1;
 
-#     def teaching(self, subject ):
-#         print(f"{self.name} Is Teaching {subject}...!");
+    def teaching(self, subject ):
+        print(f"{self.name} Is Teaching {subject}...!");
 
-#     def details(self):
+    def details(self):
 
-#         information = f"""
-#         Teacher Name Is {self.name}
-#         Class Timing is {Teacher.classTiming}
-#         """;
+        information = f"""
+        Teacher Name Is {self.name}
+        Class Timing is {Teacher.classTiming}
+        """;
 
-#         print(information);
+        print(information);
 
-# print(Teacher.counter);
+print(Teacher.counter);
 
-# obj1 : Teacher = Teacher("Andrew NG"); # Create New Object & Automatically Increase The Value Of Counter
+obj1 : Teacher = Teacher("Andrew NG"); # Create New Object & Automatically Increase The Value Of Counter
 
-# print(obj1.counter);
+print(obj1.counter);
 
-# print(Teacher.counter);
+print(Teacher.counter);
 
-# obj2 : Teacher = Teacher("Elon Musk");
+obj2 : Teacher = Teacher("Elon Musk");
 
-# print(obj1.counter);
+print(obj1.counter);
 
-# print(obj2.counter);
+print(obj2.counter);
 
-# print(Teacher.counter);
+print(Teacher.counter);
 
-# obj1.details();
+obj1.details();
 
-# class Parents(): # Inheritance
+class Parents(): # Inheritance
 
-#     def __init__(self):
+    def __init__(self):
 
-#         self.eyeColor = "Brown";
+        self.eyeColor = "Brown";
 
-#         self.hairColor = "Black";
+        self.hairColor = "Black";
 
-#     def speak(self, words):
-#         print(f"Speaking: {words}");
+    def speak(self, words):
+        print(f"Speaking: {words}");
 
-#     def watching(self, objectName):
-#         print(f"Watching: {objectName}");
+    def watching(self, objectName):
+        print(f"Watching: {objectName}");
 
-# class Child(Parents):
-#     pass;
+class Child(Parents):
+    pass;
 
-# obj1 = Parents();
+obj1 = Parents();
 
-# print(obj1.eyeColor);
+print(obj1.eyeColor);
 
-# print(obj1.hairColor);
+print(obj1.hairColor);
 
-# obj1.speak("Urdu");
+obj1.speak("Urdu");
 
-# obj1.watching("TV \n");
+obj1.watching("TV \n");
 
-# obj2 = Child();
+obj2 = Child();
 
-# obj2.speak("English & Urdu");
+obj2.speak("English & Urdu");
 
-# obj2.watching("Netflix");
+obj2.watching("Netflix");
 
-# print(obj2.eyeColor);
+print(obj2.eyeColor);
 
-# print(obj2.hairColor);
+print(obj2.hairColor);
 
-# class Parents():
+class Parents():
 
-#     def __init__(self):
+    def __init__(self):
 
-#         self.eyeColor = "Brown";
+        self.eyeColor = "Brown";
 
-#         self.hairColor = "Black";
+        self.hairColor = "Black";
 
-#     def speak(self, words):
-#         print(f"Speaking: {words}");
+    def speak(self, words):
+        print(f"Speaking: {words}");
 
-#     def watching(self, objectName):
-#         print(f"Watching: {objectName}");
+    def watching(self, objectName):
+        print(f"Watching: {objectName}");
 
-# class Child(Parents):
+class Child(Parents):
    
-#    def music(self, genre):
-#         print(f"I Love {genre}");
+   def music(self, genre):
+        print(f"I Love {genre}");
 
-# obj1 = Parents();
+obj1 = Parents();
 
-# print(obj1.eyeColor);
+print(obj1.eyeColor);
 
-# print(obj1.hairColor);
+print(obj1.hairColor);
 
-# obj1.speak("Urdu");
+obj1.speak("Urdu");
 
-# obj1.watching("TV \n");
+obj1.watching("TV \n");
 
-# obj2 = Child();
+obj2 = Child();
 
-# obj2.speak("English & Urdu");
+obj2.speak("English & Urdu");
 
-# obj2.watching("Netflix");
+obj2.watching("Netflix");
 
-# print(obj2.eyeColor);
+print(obj2.eyeColor);
 
-# print(obj2.hairColor);
+print(obj2.hairColor);
 
-# obj2.music("EDM");
+obj2.music("EDM");
 
-# class Employee():
+class Employee():
 
-#     def __init__(self, name):
+    def __init__(self, name):
 
-#         self.name = name;
+        self.name = name;
 
-# class Designer(Employee):
+class Designer(Employee):
 
-#     def __init__(self, title, name):
+    def __init__(self, title, name):
 
-#         super().__init__(name);
+        super().__init__(name);
 
-#         self.title = title;
+        self.title = title;
 
-#     def show(self):
-#         print(f"Hi! My Name Is {self.name} & I'm {self.title}");
+    def show(self):
+        print(f"Hi! My Name Is {self.name} & I'm {self.title}");
 
-# class Developer(Employee):
+class Developer(Employee):
 
-#     def __init__(self, title, name):
+    def __init__(self, title, name):
 
-#         super().__init__(name);
+        super().__init__(name);
 
-#         self.title = title;
+        self.title = title;
 
-#         self.programming_skills = ["JavaScript", "TypeScript", "Python"];
+        self.programming_skills = ["JavaScript", "TypeScript", "Python"];
 
-#     def show(self):
-#         print(f"Hi! My Name Is {self.name} & I'm {self.title}");
+    def show(self):
+        print(f"Hi! My Name Is {self.name} & I'm {self.title}");
 
-# design = Designer("Animation Artist", "Ahsan");
+design = Designer("Animation Artist", "Ahsan");
 
-# dev = Developer("Full Stack Developer & AI Engineer", "Ahmed");
+dev = Developer("Full Stack Developer & AI Engineer", "Ahmed");
 
-# print(design.name);
+print(design.name);
 
-# print(design.title);
+print(design.title);
 
-# print(dev.title);
+print(dev.title);
 
-# print(dev.programming_skills);
+print(dev.programming_skills);
 
-# design.show();
+design.show();
 
-# dev.show();
+dev.show();
 
-# class Mother:
+class Mother:
 
-#     def __init__(self, name):
+    def __init__(self, name):
 
-#         self.motherName = name;
+        self.motherName = name;
 
-#         self.eyeColor = "Blue";
+        self.eyeColor = "Blue";
 
-# class Father:
+class Father:
 
-#     def __init__(self, name):
+    def __init__(self, name):
 
-#         self.fatherName = name;
+        self.fatherName = name;
 
-#         self.height = "7 Feet";
+        self.height = "7 Feet";
 
-# class Child(Mother, Father):
+class Child(Mother, Father):
 
-#     def __init__(self, motherName, fatherName, childName):
+    def __init__(self, motherName, fatherName, childName):
 
-#         Mother.__init__(self, motherName);
+        Mother.__init__(self, motherName);
 
-#         Father.__init__(self, fatherName);
+        Father.__init__(self, fatherName);
 
-#         self.childName = childName;
+        self.childName = childName;
 
-#     def speaking(self, words):
-#         return f"Imran Khan Said: {words}";
+    def speaking(self, words):
+        return f"Imran Khan Said: {words}";
 
-#     def parents(self):
-#         return f"Khan Mother Name: {self.motherName} & Khan Father Name: {self.fatherName}"
+    def parents(self):
+        return f"Khan Mother Name: {self.motherName} & Khan Father Name: {self.fatherName}"
 
-# imran = Child("Shaukat Khanum", "Ikramullah Khan", "Imran Khan");
+imran = Child("Shaukat Khanum", "Ikramullah Khan", "Imran Khan");
 
-# print(f"Imran Khan Height {imran.height}");
+print(f"Imran Khan Height {imran.height}");
 
-# print(f"Imran Khan Eye Color {imran.eyeColor}");
+print(f"Imran Khan Eye Color {imran.eyeColor}");
 
-# print(imran.speaking("Absolutely Not"));
+print(imran.speaking("Absolutely Not"));
 
-# print(imran.childName);
+print(imran.childName);
 
-# print(imran.fatherName);
+print(imran.fatherName);
 
-# print(imran.motherName);
+print(imran.motherName);
 
-# print(imran.parents());
+print(imran.parents());
 
-# class Factory:
+class Factory:
 
-#     def __init__(self, material, zips):
+    def __init__(self, material, zips):
 
-#         self.material = material;
+        self.material = material;
 
-#         self.zips = zips;
+        self.zips = zips;
 
-# class NikeFactory(Factory):
+class NikeFactory(Factory):
 
-#     def __init__(self, material, zips, color):
+    def __init__(self, material, zips, color):
 
-#         super().__init__(material, zips);
+        super().__init__(material, zips);
 
-#         self.color = color;
+        self.color = color;
     
-# class AdidasFactory(NikeFactory):
+class AdidasFactory(NikeFactory):
 
-#     def __init__(self, material, zips, color, pockets):
+    def __init__(self, material, zips, color, pockets):
 
-#         super().__init__(material, zips, color);
+        super().__init__(material, zips, color);
 
-#         self.pockets = pockets;
+        self.pockets = pockets;
 
-# myFactory = Factory("Leather", 2);
+myFactory = Factory("Leather", 2);
 
-# nike = NikeFactory("Leather", 2, "Black");
+nike = NikeFactory("Leather", 2, "Black");
 
-# adidas = AdidasFactory("Leather", 2, "Black", 4);
+adidas = AdidasFactory("Leather", 2, "Black", 4);
 
-# print(myFactory.material, myFactory.zips);
+print(myFactory.material, myFactory.zips);
 
-# print(adidas.material, adidas.zips, adidas.color, adidas.pockets);
+print(adidas.material, adidas.zips, adidas.color, adidas.pockets);
 
-# print(nike.material, nike.zips, nike.color);
+print(nike.material, nike.zips, nike.color);
 
-# class Animal(): # Polymorphism
+class Animal(): # Polymorphism
 
-#     def eating(self, food):
+    def eating(self, food):
 
-#         print(f"Animal Is Eating {food}");
+        print(f"Animal Is Eating {food}");
 
-# class Bird(Animal):
+class Bird(Animal):
 
-#     def eating(self, food):
+    def eating(self, food):
 
-#         print(f"Bird Is Eating {food}"); # OverRide
+        print(f"Bird Is Eating {food}"); # OverRide
 
-# bird = Bird();
+bird = Bird();
 
-# bird.eating("Bread");
+bird.eating("Bread");
 
-# animal = Animal();
+animal = Animal();
 
-# animal.eating("Meat");
+animal.eating("Meat");
 
-# animal : Animal = Bird(); # Object Will Decide Which Object Method Will Run
+animal : Animal = Bird(); # Object Will Decide Which Object Method Will Run
 
-# animal.eating("Grain");
+animal.eating("Grain");
 
-# bird : Bird = Animal(); # It's Called Polymorphism
+bird : Bird = Animal(); # It's Called Polymorphism
 
-# bird.eating("Seeds");
+bird.eating("Seeds");
 
-# def add(x, y): # Overloading
+def add(x, y): # Overloading
 
-#     if isinstance(x, (int, float)) and isinstance(y, (int, float)):
-#         return x + y;
+    if isinstance(x, (int, float)) and isinstance(y, (int, float)):
+        return x + y;
 
-#     elif isinstance(x, str) and isinstance(y, str):
-#         return x + y;
+    elif isinstance(x, str) and isinstance(y, str):
+        return x + y;
 
-#     else:
-#         raise TypeError("Invalid Argument Types!");
+    else:
+        raise TypeError("Invalid Argument Types!");
 
-# print(add(1, 2));
+print(add(1, 2));
 
-# print(add(2.5, 2.5));
+print(add(2.5, 2.5));
 
-# print(add("Hello", " World!"));
+print(add("Hello", " World!"));
 
-# class Duck: # Duck Typing
+class Duck: # Duck Typing
 
-#     def quack(self):
+    def quack(self):
 
-#         return "Quack!";
+        return "Quack!";
 
-# class Person:
+class Person:
 
-#     def quack(self):
+    def quack(self):
 
-#         return "I'm Quacking Like A Duck!";
+        return "I'm Quacking Like A Duck!";
 
-# def inTheForest(param):
+def inTheForest(param):
 
-#     print(param.quack());
+    print(param.quack());
 
-# donald = Duck();
+donald = Duck();
 
-# john = Person();
+john = Person();
 
-# inTheForest(donald);
+inTheForest(donald);
 
-# inTheForest(john);
+inTheForest(john);
 
-# class VU: # Access Modifiers
+class VU: # Access Modifiers
 
-#       def __init__(self):
+      def __init__(self):
 
-#         self.vuHelpline = "123456789"; # Public
+        self.vuHelpline = "123456789"; # Public
 
-#         self._totalExpense = 6000; # Protected
+        self._totalExpense = 6000; # Protected
 
-#         self.__testAnouncement = "10 June 2026"; # Private
+        self.__testAnouncement = "10 June 2026"; # Private
 
-# uni = VU();
+uni = VU();
 
-# print(uni.vuHelpline);
+print(uni.vuHelpline);
 
-# uni.vuHelpline = "1234567890";
+uni.vuHelpline = "1234567890";
 
-# print(uni.vuHelpline);
+print(uni.vuHelpline);
 
-# print(uni._totalExpense); # Technically It Should Not Work But It Python Problem Not My Code
+print(uni._totalExpense); # Technically It Should Not Work But It Python Problem Not My Code
 
-# print(uni._VU__testAnouncement); # Its Also Access Private Value But Can't Update Value That's Not Pure Object Oriented
+print(uni._VU__testAnouncement); # Its Also Access Private Value But Can't Update Value That's Not Pure Object Oriented
 
-# class StudentLogin(): # Encapsulation
+class StudentLogin(): # Encapsulation
 
-#     def __init__(self):
+    def __init__(self):
 
-#         self.__username = "Admin";
+        self.__username = "Admin";
 
-#         self.__password = "Admin";
+        self.__password = "Admin";
 
-#     def __dbConnectivity(self, user, passwrod):
+    def __dbConnectivity(self, user, passwrod):
 
-#         print("Successfully Connected");
+        print("Successfully Connected");
 
-#         if user == self.__username and passwrod == self.__password:
+        if user == self.__username and passwrod == self.__password:
 
-#             return "Valid User";
+            return "Valid User";
 
-#         else:
+        else:
 
-#             return "Invalid User";
+            return "Invalid User";
 
-#     def updatePassword(self, password):
+    def updatePassword(self, password):
 
-#         self.__password = password; # Setter Method
+        self.__password = password; # Setter Method
 
-#         print("Password Updated!");
+        print("Password Updated!");
 
-#     def login(self, user1 , pass1):
+    def login(self, user1 , pass1):
 
-#         message: str = self.__dbConnectivity(user1, pass1);
+        message: str = self.__dbConnectivity(user1, pass1);
 
-#         print(message);
+        print(message);
 
-#     def displayInformation(self):
+    def displayInformation(self):
 
-#         print(f"Hello Dear {self.__username}"); # Getter Method
+        print(f"Hello Dear {self.__username}"); # Getter Method
 
-# ahmed = StudentLogin();
+ahmed = StudentLogin();
 
-# ahmed.login("Admin", "Ahmed");
+ahmed.login("Admin", "Ahmed");
 
-# ahmed.login("Admin", "Admin");
+ahmed.login("Admin", "Admin");
 
-# ahmed.updatePassword("Admin1234");
+ahmed.updatePassword("Admin1234");
 
-# ahmed.displayInformation();
+ahmed.displayInformation();
 
-# ahmed.login("Admin", "Admin1234");
+ahmed.login("Admin", "Admin1234");
 
-# class BankAccount:
+class BankAccount:
 
-#     def __init__(self):
+    def __init__(self):
 
-#         self.__balance = 1000;
+        self.__balance = 1000;
 
-#     def deposit(self, amount):
+    def deposit(self, amount):
 
-#         self.__balance += amount;
+        self.__balance += amount;
 
-#         print(f"Deposited Amount: {amount}");
+        print(f"Deposited Amount: {amount}");
 
-#     def withdraw(self, amount):
+    def withdraw(self, amount):
 
-#         if amount <= self.__balance:
+        if amount <= self.__balance:
 
-#             self.__balance -= amount;
+            self.__balance -= amount;
 
-#             print(f"Withdrawn Amount: {amount}");
+            print(f"Withdrawn Amount: {amount}");
 
-#         else:
+        else:
 
-#             print(f"Insufficient Balance: {amount}");
+            print(f"Insufficient Balance: {amount}");
 
-#     def getBalance(self):
+    def getBalance(self):
 
-#         print("Balance:", self.__balance);
+        print("Balance:", self.__balance);
 
-# account = BankAccount();
+account = BankAccount();
 
-# account.getBalance();
+account.getBalance();
 
-# account.deposit(500);
+account.deposit(500);
 
-# account.withdraw(800);
+account.withdraw(800);
 
-# account.getBalance();
+account.getBalance();
 
-# account.withdraw(900);
+account.withdraw(900);
 
-# from abc import ABC, abstractmethod; # ABC Means (Abstract Base Classes)
+from abc import ABC, abstractmethod; # ABC Means (Abstract Base Classes)
 
-# class Animal(ABC):  # Abstraction
+class Animal(ABC):  # Abstraction
 
-#     def __init__(self):
-#         self.livingThing = True
+    def __init__(self):
+        self.livingThing = True
 
-#     @abstractmethod
-#     def eat(self, food):
-#         ...
+    @abstractmethod
+    def eat(self, food):
+        ...
 
-# class Cat(Animal):
+class Cat(Animal):
 
-#     def __init__(self):
-#         super().__init__();
+    def __init__(self):
+        super().__init__();
 
-#     def eat(self, food):
-#         return f"Cat Is Eating {food}";
+    def eat(self, food):
+        return f"Cat Is Eating {food}";
 
-# myCat = Cat();
+myCat = Cat();
 
-# print(myCat.livingThing);
+print(myCat.livingThing);
 
-# print(myCat.eat("Fish"));
+print(myCat.eat("Fish"));
 
-# class Abstract(ABC):
+class Abstract(ABC):
 
-#     @abstractmethod
-#     def perimeter(self):
-#         pass;
+    @abstractmethod
+    def perimeter(self):
+        pass;
     
-#     @abstractmethod
-#     def area(self):
-#         pass;
+    @abstractmethod
+    def area(self):
+        pass;
 
-# class Square(Abstract):
+class Square(Abstract):
 
-#     def __init__(self, side):
-#         self.side = side;
+    def __init__(self, side):
+        self.side = side;
 
-#     def perimeter(self):
-#         return 4 * self.side;
+    def perimeter(self):
+        return 4 * self.side;
 
-#     def area(self):
-#         return self.side * self.side;
+    def area(self):
+        return self.side * self.side;
 
-# class Circle(Abstract):
+class Circle(Abstract):
 
-#     def __init__(self, radius):
-#         self.radius = radius;
+    def __init__(self, radius):
+        self.radius = radius;
 
-#     def perimeter(self):
-#         return 2 * 3.14 * self.radius;
+    def perimeter(self):
+        return 2 * 3.14 * self.radius;
 
-#     def area(self):
-#         return 3.14 * self.radius * self.radius;
+    def area(self):
+        return 3.14 * self.radius * self.radius;
 
-# square = Square(4);
+square = Square(4);
 
-# circle = Circle(3);
+circle = Circle(3);
 
-# print("Square Perimeter:", square.perimeter());
+print("Square Perimeter:", square.perimeter());
 
-# print("Square Area:", square.area());
+print("Square Area:", square.area());
 
-# print("Circle Perimeter:", circle.perimeter());
+print("Circle Perimeter:", circle.perimeter());
 
-# print("Circle Area:", circle.area());
+print("Circle Area:", circle.area());
 
-# class Person: # Dunder Methods
+class Person: # Dunder Methods
 
-#     def __init__(self, name ,age):
-#         self.name = name;
-#         self.age = age;
+    def __init__(self, name ,age):
+        self.name = name;
+        self.age = age;
     
-#     def __str__(self):
-#         return f"Hello Everyone! My Name Is: {self.name}"; # Return String Not Print
+    def __str__(self):
+        return f"Hello Everyone! My Name Is: {self.name}"; # Return String Not Print
 
-#     def __add__(self, other): # Other Is Present (Other Object)
-#         return f"Your Sum Of Ages Are: {self.age + other.age}";
+    def __add__(self, other): # Other Is Present (Other Object)
+        return f"Your Sum Of Ages Are: {self.age + other.age}";
 
-# person1 = Person("Ahmed", 25);
+person1 = Person("Ahmed", 25);
 
-# person2 = Person("AHM X", 25);
+person2 = Person("AHM X", 25);
 
-# print(person1); # Default Call __Str__ Method
+print(person1); # Default Call __Str__ Method
 
-# print(person1 + person2);
+print(person1 + person2);
 
-# class Person:
+class Person:
 
-#     def __init__(self, name ,age):
-#         self.name = name;
-#         self.age = age;
+    def __init__(self, name ,age):
+        self.name = name;
+        self.age = age;
 
-#     def __add__(self, other):
-#         sum = 0;
-#         for i in other: # Multiple Objects Addition
-#             sum = sum + i.age;
-#         return f"Your Sum Of Ages Are: {self.age + sum}";
+    def __add__(self, other):
+        sum = 0;
+        for i in other: # Multiple Objects Addition
+            sum = sum + i.age;
+        return f"Your Sum Of Ages Are: {self.age + sum}";
 
-# person1 = Person("Ahmed", 25);
+person1 = Person("Ahmed", 25);
 
-# person2 = Person("AHM X", 25);
+person2 = Person("AHM X", 25);
 
-# person3 = Person("Emmett", 25);
+person3 = Person("Emmett", 25);
 
-# print(person1 + (person2, person3));
+print(person1 + (person2, person3));
 
 class MainWindow:
 
@@ -836,3 +836,115 @@ window = MainWindow();
 window(); # Default Call __Call__ Method & Call Method Convert Object Use Like Fucntion
 
 print(window); # Default Call __Str__ Method
+
+class Greet: # Decorator
+
+    @property
+    def show(self):
+        print("Hello How Are You!");
+    
+obj = Greet();
+
+obj.show; # I Use @Property Decorator Thats Why I Direct Show Method Without Using Parentheses
+
+def decorate(func):
+
+    def wrapper():
+
+        print("Hi!");
+
+        func();
+
+        print("Bye Bye!");
+
+    return wrapper;
+
+@decorate
+def hello():
+    print(f"How Is Going");
+
+hello();
+
+def decorate(func):
+
+    def wrapper(*args,**kwargs):
+
+        print("Addition Your Numbers Are:");
+
+        func(*args,**kwargs);
+
+        print("Thats Your Result");
+
+    return wrapper;
+
+@decorate
+def addition(a, b):
+    print(f"Your Total Is {a + b} ");
+
+addition(12, 67);
+
+def add(*args):
+
+    sum = 0;
+
+    for i in args:
+        sum = sum + i;
+
+    print(sum);
+
+add(12, 45, 567, 6781);
+
+def info(**kwargs):
+
+    print("Your Information Is: ");
+
+    for i in kwargs:
+        print(f"{i} : {kwargs[i]}");
+
+info(name = "Ahmed", age = 25, designation = "AI Engineer");
+
+print(list(range(1, 11))); # List Comprehensive
+
+for i in range(1, 11):
+
+    print(i ** 2);
+
+print([i ** 2 for i in range(1, 11)]);
+
+lis = [i for i in range(1, 21) if i % 2 == 0]; # Also Called Single Line Expression
+
+print(lis);
+
+key = {i : i ** 2 for i in range(1, 10)};
+
+print(key);
+
+checkEven = lambda x: print(f"Even: {x}") if x % 2 == 0 else print(f"Odd: {x}");
+
+checkEven(7);
+
+numbers = [1, 2, 3, 4];
+
+result = map(lambda x: x * 2, numbers);
+
+print(list(result));
+
+def even(x):
+    if x % 2 == 0:
+        return True;
+    else:
+        False;
+
+num = [1, 3, 4, 5, 6, 9];
+
+result = filter(even, num);
+
+print(result);
+
+print(list(result));
+
+import math;
+
+print(math.sqrt(16));
+
+print(int(math.sqrt(16)));
