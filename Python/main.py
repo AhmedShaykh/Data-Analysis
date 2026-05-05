@@ -411,7 +411,7 @@ elif (per >=80 )and (per < 100):
 else:
     print("Error 404");
 
-records: list[str] = ["Revealed", "Spinnin", "Armada", "STMPD"];
+records = ["Revealed", "Spinnin", "Armada", "STMPD"];
 
 print(records);
 
@@ -422,7 +422,7 @@ records = ["Revealed", "Spinnin", "Armada", "STMPD"];
 
 i = 0;
 
-print(len(records)); # Length Calculate List Value (Its Start 1 Not 0)
+print(len(records)); # Calculate Length Of List Value (Its Start 1 Not 0)
 
 while i < len(records):
     print(records[i], i);
@@ -555,7 +555,7 @@ while flag:
     if number == 10:
         break;
 
-li = [100,200,300];
+li = [100, 200, 300];
 
 index = 0;
 
@@ -602,7 +602,7 @@ def ai():
 
 ai();
 
-def addNumbers(num1 , num2 = 0):
+def addNumbers(num1 , num2 = 6):
     print(num1 + num2);
 
 addNumbers(56,42);
@@ -672,9 +672,9 @@ print(abc[:26:2]);
 
 print(abc[::-1]);
 
-print(dir(list)); # List All Methods
+print(dir(list));
 
-print([i for i in dir(list) if "_" not in i]);
+print([i for i in dir(list) if "_" not in i]); # List All Methods
 
 records = ["Revealed", "Spinnin", "Armada"];
 
@@ -708,7 +708,7 @@ records.remove("Spinnin");
 
 print(records);
 
-record = records.pop(2); # Pop Remove & Store Value In Element Or Variable
+record = records.pop(1); # Pop Remove & Store Value In Element Or Variable
 
 print(records, "Pop Store Value:", record);
 
@@ -793,7 +793,7 @@ sum = 0;
 for i in l:
     sum = sum + i;
 
-print(sum/len(l)); # Mean = (Sum Of All Values) ÷ (Total Number Of Values)
+print(sum / len(l)); # Mean = (Sum Of All Values) ÷ (Total Number Of Values)
 
 letters = ("A","B","C"); # Tuple Immutable (Constant)
 
@@ -840,7 +840,7 @@ print(setVal);
 
 print(dir(set));
 
-print([i for i in dir(set) if "__" not in i]); # Set Data Types Methods & Attributes
+print([i for i in dir(set) if "__" not in i]);
 
 A = {1, 2, 3, 4, 5};
 
@@ -913,7 +913,7 @@ data = {
 
 dictdata = data.copy(); # Shallow Copy
 
-dictdata["Company"] = "XYFORA";
+data["Company"] = "XYFORA";
 
 print(data, "Shallow Copy");
 
@@ -955,13 +955,13 @@ data= {
                             "Language":"Python"
                         };
 
-val = data.setdefault("Language", "TypeScript"); # If Same Index Value Exist Not Update Value
+val = data.setdefault("Language", "TypeScript"); # If Same Index Value Exist Its Not Update Value
 
 print(data);
 
 print(val);
 
-val2 = data.setdefault("LLM", "Grok"); # If Not Index Value Exist Add New Value In Object
+val2 = data.setdefault("LLM", "Grok"); # If Index Value Not Exist Add New Value In Object
 
 print(data);
 

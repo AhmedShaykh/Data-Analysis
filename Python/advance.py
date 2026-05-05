@@ -51,7 +51,7 @@ finally:
 
 print("Congratulations Your Division Is Successfully Run");
 
-age = input("Enter Your Number: ");
+age = int(input("Enter Your Number: "));
 
 try:
 
@@ -108,7 +108,7 @@ with open("./app2.txt") as file:
 
     print(file.readlines());
 
-with open("./app2.txt", "r") as file: # By Default Is R (Read) Methos Is Set
+with open("./app2.txt", "r") as file: # By Default Is R (Read) Method Is Set
 
     print(file.readlines()[1:]);
 
@@ -256,7 +256,7 @@ class Teacher:
     def __init__(self, teacherId, teacherName):
         self.teacherId = teacherId;
         self.teacherName = teacherName;
-        self.organizationName = "Panaversity";
+        self.organizationName = "Deep Learning.ai";
 
     def teaching(self, subject ):
         print(f"{self.teacherName} Is Teaching {subject}...!");
@@ -279,12 +279,11 @@ class Teacher:
 
     counter = 0;
 
-    classTiming = "10PM In USA Time";
-
     def __init__(this, teacherName):
         this.teacherName = teacherName;
-        this.organizationName = "Panaversity";
+        this.organizationName = "Deep Learning.ai";
         Teacher.counter += 1;
+        this.classTiming = f"{10 + Teacher.counter} PM USA Time";
 
     def teaching(self, subject ):
         print(f"{self.teacherName} Is Teaching {subject}...!");
@@ -293,7 +292,7 @@ class Teacher:
 
         information = f"""
         Teacher Name Is {self.teacherName}
-        Class Timing is {Teacher.classTiming}
+        Class Timing is {self.classTiming}
         """;
 
         print(information);
@@ -313,6 +312,8 @@ print(obj2.counter);
 print(Teacher.counter);
 
 obj1.details();
+
+obj2.details();
 
 class Parents(): # Inheritance
 
@@ -588,11 +589,11 @@ class StudentLogin(): # Encapsulation
         self.__username = "Admin";
         self.__password = "Admin";
 
-    def __dbConnectivity(self, user, passwrod):
+    def __dbConnectivity(self, user, password):
 
         print("Successfully Connected");
 
-        if user == self.__username and passwrod == self.__password:
+        if user == self.__username and password == self.__password:
             return "Valid User";
         else:
             return "Invalid User";
@@ -734,9 +735,9 @@ class Person: # Dunder Methods
 
 person1 = Person("Ahmed", 25);
 
-person2 = Person("AHM X", 25);
-
 print(person1); # Default Call __Str__ Method
+
+person2 = Person("AHM X", 25);
 
 print(person1 + person2);
 
@@ -790,11 +791,8 @@ obj.show; # I Use @Property Decorator Thats Why I Direct Show Method Without Usi
 def decorate(func):
 
     def wrapper():
-
         print("Hi!");
-
         func();
-
         print("Bye Bye!");
 
     return wrapper;
@@ -808,11 +806,8 @@ hello();
 def decorate(func):
 
     def wrapper(*args,**kwargs):
-
         print("Addition Your Numbers Are:");
-
         func(*args,**kwargs);
-
         print("Thats Your Result");
 
     return wrapper;
@@ -850,11 +845,13 @@ for i in range(1, 11):
 
 print([i ** 2 for i in range(1, 11)]);
 
+print([i ** i for i in range(1, 11)]);
+
 lis = [i for i in range(1, 21) if i % 2 == 0]; # Also Called Single Line Expression
 
 print(lis);
 
-key = {i : i ** 2 for i in range(1, 10)};
+key = {i : i ** 2 for i in range(1, 11)};
 
 print(key);
 
@@ -871,6 +868,7 @@ result = map(lambda x: x * 2, numbers);
 print(list(result));
 
 def even(x):
+
     if x % 2 == 0:
         return True;
     else:
@@ -883,14 +881,6 @@ result = filter(even, num);
 print(result);
 
 print(list(result));
-
-import math;
-
-print(math.sqrt(7));
-
-print(math.sqrt(16));
-
-print(int(math.sqrt(16)));
 
 import requests;
 

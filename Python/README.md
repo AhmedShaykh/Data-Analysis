@@ -1,1 +1,1 @@
-# Learning Python!
+# Learn Python!
