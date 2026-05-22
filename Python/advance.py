@@ -882,6 +882,32 @@ print(result);
 
 print(list(result));
 
+def outerFunc(x): # Closure Function
+
+    def innerFunc(y):
+        return x + y;
+    return innerFunc;
+
+closure = outerFunc(10);
+
+print(closure(5));
+
+import asyncio; # Async & Await
+
+async def fetch_data():
+    print("Fetching Data...");
+    await asyncio.sleep(2);
+    print("Data Fetched!");
+    return "Data Fetched Successfully!";
+
+async def main():
+    print("Start");
+    result = await fetch_data();
+    print("Result:", result);
+    print("End");
+
+asyncio.run(main());
+
 import requests;
 
 url = "https://jsonplaceholder.typicode.com/todos/1";

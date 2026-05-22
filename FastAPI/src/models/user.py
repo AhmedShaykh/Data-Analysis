@@ -12,5 +12,5 @@ class LoginUser(BaseModel):
     password: str = Field(..., description="Password is Required");
 
 class UpdateUser(BaseModel):
-    name: str = Field(None, description="Name is optional");
+    name: str = Field(None, description="Name is Optional");
     updated_at: datetime = Field(default_factory=datetime.now);
